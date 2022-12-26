@@ -1,0 +1,66 @@
+<!--&lt;!&ndash; index.html &ndash;&gt;-->
+
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+<!--<head>-->
+<!--  <title>Video Chooser</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--  &lt;!&ndash; Video container &ndash;&gt;-->
+<!--  <div id="video-container">-->
+<!--    &lt;!&ndash; Video element &ndash;&gt;-->
+<!--    <video id="video" controls>-->
+<!--      &lt;!&ndash; Video source for desktop devices &ndash;&gt;-->
+<!--      &lt;!&ndash; Video source for mobile devices &ndash;&gt;-->
+<!--      <source src="assets/img/LANDING_VIDEO.mp4" type="video/mp4" id="mobile-video">-->
+<!--      <source src="assets/img/updated3.mp4" type="video/mp4" id="desktop-video">-->
+<!--    </video>-->
+<!--  </div>-->
+
+<!--  &lt;!&ndash; JavaScript to determine which video to play &ndash;&gt;-->
+<!--  <script>-->
+<!--    // Get the video element-->
+<!--    var video = document.getElementById('video');-->
+
+<!--    // Check if the device is a mobile or desktop-->
+<!--    if (navigator.userAgent.match(/Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile/i)) {-->
+<!--      // If the device is a mobile, show the mobile video-->
+<!--      document.getElementById('mobile-video').style.display = 'block';-->
+<!--    } else {-->
+<!--      // If the device is a desktop, show the desktop video-->
+<!--      document.getElementById('desktop-video').style.display = 'block';-->
+<!--    }-->
+<!--  </script>-->
+<!--</body>-->
+<!--</html>-->
+
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Image Chooser</title>
+</head>
+<body>
+  <!-- Image container -->
+  <div id="image-container">
+    <!-- Image element -->
+    <img src="" alt="Image" id="image">
+  </div>
+
+  <!-- JavaScript to determine which image to display -->
+  <script>
+    // Get the image element
+    var image = document.getElementById('image');
+
+    // Check if the device is a mobile or desktop
+    if (navigator.userAgent.match(/Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile/i)) {
+      // If the device is a mobile, show the mobile image
+      image.src = 'assets/img/tarsyer_logo.png';
+    } else {
+      // If the device is a desktop, show the desktop image
+      image.src = 'assets/img/MP_Birla.png';
+    }
+  </script>
+</body>
+</html>
