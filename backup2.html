@@ -1,66 +1,66 @@
 <!--&lt;!&ndash; index.html &ndash;&gt;-->
 
-<!--<!DOCTYPE html>-->
-<!--<html>-->
-<!--<head>-->
-<!--  <title>Video Chooser</title>-->
-<!--</head>-->
-<!--<body>-->
-<!--  &lt;!&ndash; Video container &ndash;&gt;-->
-<!--  <div id="video-container">-->
-<!--    &lt;!&ndash; Video element &ndash;&gt;-->
-<!--    <video id="video" controls>-->
-<!--      &lt;!&ndash; Video source for desktop devices &ndash;&gt;-->
-<!--      &lt;!&ndash; Video source for mobile devices &ndash;&gt;-->
-<!--      <source src="assets/img/LANDING_VIDEO.mp4" type="video/mp4" id="mobile-video">-->
-<!--      <source src="assets/img/updated3.mp4" type="video/mp4" id="desktop-video">-->
-<!--    </video>-->
-<!--  </div>-->
-
-<!--  &lt;!&ndash; JavaScript to determine which video to play &ndash;&gt;-->
-<!--  <script>-->
-<!--    // Get the video element-->
-<!--    var video = document.getElementById('video');-->
-
-<!--    // Check if the device is a mobile or desktop-->
-<!--    if (navigator.userAgent.match(/Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile/i)) {-->
-<!--      // If the device is a mobile, show the mobile video-->
-<!--      document.getElementById('mobile-video').style.display = 'block';-->
-<!--    } else {-->
-<!--      // If the device is a desktop, show the desktop video-->
-<!--      document.getElementById('desktop-video').style.display = 'block';-->
-<!--    }-->
-<!--  </script>-->
-<!--</body>-->
-<!--</html>-->
-
-<!-- index.html -->
-
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Image Chooser</title>
+  <title>Video Chooser</title>
 </head>
 <body>
-  <!-- Image container -->
-  <div id="image-container">
-    <!-- Image element -->
-    <video src="" id="video" autoplay></video>
+  <!-- Video container -->
+  <div id="video-container">
+    <!-- Video element -->
+    <video id="video" controls>
+      <!-- Video source for desktop devices -->
+      <!-- Video source for mobile devices -->
+      <source src="https://thenewcode.com/assets/videos/after.mp4" type="video/mp4" id="mobile-video">
+      <source src="https://thenewcode.com/assets/videos/before.webm" type="video/mp4" id="desktop-video">
+    </video>
   </div>
 
-  <!-- JavaScript to determine which image to display -->
+  <!-- JavaScript to determine which video to play -->
   <script>
-    // Get the image element
+    // Get the video element
     var video = document.getElementById('video');
 
     // Check if the device is a mobile or desktop
     if (navigator.userAgent.match(/Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile/i)) {
-      // If the device is a mobile, show the mobile image
-      video.src = "https://thenewcode.com/assets/videos/after.mp4";
+      // If the device is a mobile, show the mobile video
+      document.getElementById('mobile-video').style.display = 'block';
     } else {
-      // If the device is a desktop, show the desktop image
-      video.src = 'https://thenewcode.com/assets/videos/before.webm';
+      // If the device is a desktop, show the desktop video
+      document.getElementById('desktop-video').style.display = 'block';
     }
   </script>
 </body>
 </html>
+
+<!-- index.html -->
+
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+<!--<head>-->
+<!--  <title>Image Chooser</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--  &lt;!&ndash; Image container &ndash;&gt;-->
+<!--  <div id="image-container">-->
+<!--    &lt;!&ndash; Image element &ndash;&gt;-->
+<!--    <video src="" id="video" autoplay></video>-->
+<!--  </div>-->
+
+<!--  &lt;!&ndash; JavaScript to determine which image to display &ndash;&gt;-->
+<!--  <script>-->
+<!--    // Get the image element-->
+<!--    var video = document.getElementById('video');-->
+
+<!--    // Check if the device is a mobile or desktop-->
+<!--    if (navigator.userAgent.match(/Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile/i)) {-->
+<!--      // If the device is a mobile, show the mobile image-->
+<!--      video.src = "https://thenewcode.com/assets/videos/after.mp4";-->
+<!--    } else {-->
+<!--      // If the device is a desktop, show the desktop image-->
+<!--      video.src = 'https://thenewcode.com/assets/videos/before.webm';-->
+<!--    }-->
+<!--  </script>-->
+<!--</body>-->
+<!--</html>-->
