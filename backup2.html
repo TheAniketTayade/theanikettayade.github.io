@@ -45,21 +45,21 @@
   <!-- Image container -->
   <div id="image-container">
     <!-- Image element -->
-    <img src="" alt="Image" id="image">
+    <video src="" id="video" autoplay></video>
   </div>
 
   <!-- JavaScript to determine which image to display -->
   <script>
     // Get the image element
-    var image = document.getElementById('image');
+    var video = document.getElementById('video');
 
     // Check if the device is a mobile or desktop
     if (navigator.userAgent.match(/Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile/i)) {
       // If the device is a mobile, show the mobile image
-      image.src = 'assets/img/Untitled design.png';
+      video.src = "https://thenewcode.com/assets/videos/after.mp4";
     } else {
       // If the device is a desktop, show the desktop image
-      image.src = 'assets/img/Title Page.png';
+      video.src = 'https://thenewcode.com/assets/videos/before.webm';
     }
   </script>
 </body>
