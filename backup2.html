@@ -1,66 +1,21 @@
-<!--&lt;!&ndash; index.html &ndash;&gt;-->
+<style>
+  body {
+    /* Set a default background color */
+    background-color: #fff;
+  }
 
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Video Chooser</title>
-</head>
-<body>
-  <!-- Video container -->
-  <div id="video-container">
-    <!-- Video element -->
-    <video id="video" controls>
-      <!-- Video source for desktop devices -->
-      <!-- Video source for mobile devices -->
-      <source src="https://thenewcode.com/assets/videos/after.mp4" type="video/mp4" id="mobile-video">
-      <source src="https://thenewcode.com/assets/videos/before.webm" type="video/mp4" id="desktop-video">
-    </video>
-  </div>
-
-  <!-- JavaScript to determine which video to play -->
-  <script>
-    // Get the video element
-    var video = document.getElementById('video');
-
-    // Check if the device is a mobile or desktop
-    if (navigator.userAgent.match(/Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile/i)) {
-      // If the device is a mobile, show the mobile video
-      document.getElementById('mobile-video').style.display = 'block';
-    } else {
-      // If the device is a desktop, show the desktop video
-      document.getElementById('desktop-video').style.display = 'block';
+  @media (min-width: 600px) {
+    body {
+      /* Set a background image if the device has a minimum width of 600px */
+      background-image: url('assets/img/mrunal.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
     }
-  </script>
-</body>
-</html>
-
-<!-- index.html -->
-
-<!--<!DOCTYPE html>-->
-<!--<html>-->
-<!--<head>-->
-<!--  <title>Image Chooser</title>-->
-<!--</head>-->
-<!--<body>-->
-<!--  &lt;!&ndash; Image container &ndash;&gt;-->
-<!--  <div id="image-container">-->
-<!--    &lt;!&ndash; Image element &ndash;&gt;-->
-<!--    <video src="" id="video" autoplay></video>-->
-<!--  </div>-->
-
-<!--  &lt;!&ndash; JavaScript to determine which image to display &ndash;&gt;-->
-<!--  <script>-->
-<!--    // Get the image element-->
-<!--    var video = document.getElementById('video');-->
-
-<!--    // Check if the device is a mobile or desktop-->
-<!--    if (navigator.userAgent.match(/Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile/i)) {-->
-<!--      // If the device is a mobile, show the mobile image-->
-<!--      video.src = "https://thenewcode.com/assets/videos/after.mp4";-->
-<!--    } else {-->
-<!--      // If the device is a desktop, show the desktop image-->
-<!--      video.src = 'https://thenewcode.com/assets/videos/before.webm';-->
-<!--    }-->
-<!--  </script>-->
-<!--</body>-->
-<!--</html>-->
+  }
+</style>
+<!--@media (max-width: 599px) {-->
+<!--  body {-->
+<!--    /* Remove the background image on devices with a maximum width of 599px */-->
+<!--    background-image: none;-->
+<!--  }-->
+<!--}-->
